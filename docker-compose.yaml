@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  java-app:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./src/:/app/src
+      - ./bin/:/app/bin
+      - ./jar/:/app/jar
